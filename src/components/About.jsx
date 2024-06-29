@@ -1,10 +1,13 @@
-import React from 'react';
 import image0 from "../assets/heroimage1.png"; // Replace with your hero image path
 import vision from "../assets/vision.png"; // Replace with your vision image path
 import innovation from "../assets/project_Management.png"; // Replace with your innovation image path
 import connection from "../assets/connected_People.png"; // Replace with your connection image path
 import line_v from "../assets/line_ver.png"; // Replace with your line image path
 import line_h from "../assets/line_hor.png"; // Replace with your line image path
+import i_1 from '../assets/about-f.png';
+import i_2 from '../assets/about_v.png';
+import logo from "../assets/cg-nav-logo.png"; // Replace with your logo image path
+
 
 const About = () => (
   <div>
@@ -83,32 +86,105 @@ const About = () => (
     </section>
 
     {/* Creative Directors Section */}
-    <section className="bg-gray-100 py-20 px-4 flex flex-col md:flex-row gap-16">
-      <div className='w-full md:w-1/2 my-5 flex flex-col md:flex-row gap-4 md:gap-8 h-auto'>
-        <img src={image0} className='w-full md:w-[323px] h-auto md:h-[451px] mb-4 md:mb-0' alt="Creative Director 1" />
-        <img src={image0} className='w-full md:w-[323px] h-auto md:h-[451px]' alt="Creative Director 2" />
+    <section className="bg-gray-100 py-20 flex flex-col md:flex-row ">
+      <div className='w-full md:w-1/2 my-28 flex flex-col md:flex-row gap-4 md: h-auto  '>
+      {/* ----- */}
+        <div className=' gap-4 md:-pr-[200px] md:flex md:flex-row md:gap-2 md:pl-52 ' >
+        <img src={i_1} className='w-full md:w-[323px] h-auto md:h-[451px] mb-4 ' alt="Creative Director 1" />
+        <div className='bg-black rounded-full w-[80px] h-[4px]  mt-[50px]' ></div>
+        <div className='text-3xl pt-4 text-[#034B63]' >
+        <h1>Name 1</h1>
+        <h1>Founders</h1>
+        </div>
+        </div>
+        {/* ------------- */}
+        <div className=' gap-4 md:mt-28 md:z-10 md:flex md:flex-row' >
+        <div className=' md:flex md:items-end md:flex-row md:mb-[35px]'>
+        <div className='text-3xl  text-[#034B63]' >
+        <h1>Visoin</h1>
+        </div>
+        <div className='bg-black rounded-full mx-2  w-[60px] h-[2px] mb-[15px] -mr-12 z-40' ></div>
+        </div>
+        <img src={i_2} className='w-full md:w-[323px] h-auto md:h-[451px] mb-4 md:mb-0' alt="Creative Director 1" />
+        </div>
       </div>
-      <div className='w-full md:w-1/2 flex flex-col justify-center'>
-        <h2 className='text-[28px] md:text-[36px] lg:text-[45px] font-bold'>Creative Directors</h2>
-        <p className='font-normal text-[16px] md:text-[20px] lg:text-[28px] text-[#9197A3]'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus, ante et consequat tincidunt.
-        </p>
+      <div className='w-full md:w-[1056px] flex flex-col bg-white h-[766px] z-5'>
+        <div className='ml-[254px] mt-[194px] flex flex-col items-start'>
+          <h2 className='text-[28px] md:text-[36px] lg:text-[45px] font-bold'>Creative Directors</h2>
+          <p className='font-normal text-[16px] md:text-[20px] lg:text-[28px] text-[#4d5055]'>
+            Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit. Sed <br/>
+            faucibus, ante et consequat <br/>tincidunt.
+          </p>
+        </div>
       </div>
     </section>
 
     {/* Team Section */}
     <section className="bg-white py-20 px-4">
-      <div className="container mx-auto">
-        <h2 className="text-2xl font-bold mb-8 text-center">Team</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Repeat this block for each team member */}
-          <div className="text-center">
-            <img src="path/to/team-member.jpg" alt="Team Member" className="w-full h-auto rounded-lg" />
-            <h3 className="text-xl font-bold mt-4">Name</h3>
-            <p className="text-gray-700">Role</p>
-          </div>
-        </div>
+     <div className='flex flex-col' >
+      <div className='flex flex-row justify-end gap-12 text-3xl md:text-7xl pb-10 text-[#D1D3D4] ' >
+        <h1 className="text-[#FEB100]">#designer</h1>
+        <h1>#contentwriter</h1>
+        <h1>#desi</h1>
       </div>
+      <div className='flex flex-col md:flex-row gap-8 pl-4 md:pl-28' >
+          <div className="h-auto md:h-[626px] w-full md:w-[454px] bg-[#034B63] flex flex-col ">
+            <div className='h-[90%] with-auto text-xl md:text-3xl flex flex-col items-start pt-20 pl-4 md:pl-16 font-DM font-sans  ' >
+              <h1 className='text-[#FEB100] tracking-[.40em]  ' >Team</h1>
+              <p className='text-white'>We set up team to <br/>
+                  shape your identity,<br/>
+                  push your idea <br/>
+                  & manage the work</p>
+            </div>
+            <div className='pr-8 pb-4 flex  justify-end items-end h-auto with-auto'  >
+              <img src={logo} alt='image' className='w-[186px] h-[51px] ' />
+            </div>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-8 pl-4 md:pl-28">
+            <div className="w-full md:w-[251px] h-[382px] border-2 rounded-md text-2xl text-[#034B63] font-sans flex flex-col items-center">
+              <img src={i_1} alt="Creative Director 1" className="w-full md:w-[251px] h-[301px]" />
+              <h1 className="tracking-wide font-bold pt-3 text-2xl">NAME</h1>
+              <h1 className="text-lg">ROLE</h1>
+            </div>
+            <div className="w-full md:w-[251px] h-[382px] border-2 rounded-md text-2xl text-[#034B63] font-sans flex flex-col items-center">
+              <img src={i_1} alt="Creative Director 1" className="w-full md:w-[251px] h-[301px]" />
+              <h1 className="tracking-wide font-bold pt-3 text-2xl">NAME</h1>
+              <h1 className="text-lg">ROLE</h1>
+            </div>
+            <div className="w-full md:w-[251px] h-[382px] border-2 rounded-md text-2xl text-[#034B63] font-sans flex flex-col items-center">
+              <img src={i_1} alt="Creative Director 1" className="w-full md:w-[251px] h-[301px]" />
+              <h1 className="tracking-wide font-bold pt-3 text-2xl">NAME</h1>
+              <h1 className="text-lg">ROLE</h1>
+            </div>
+            <div className="w-full md:w-[251px] h-[382px] border-2 rounded-md text-2xl text-[#034B63] font-sans flex flex-col items-center">
+              <img src={i_1} alt="Creative Director 1" className="w-full md:w-[251px] h-[301px]" />
+              <h1 className="tracking-wide font-bold pt-3 text-2xl">NAME</h1>
+              <h1 className="text-lg">ROLE</h1>
+            </div>
+            <div className="w-full md:w-[251px] h-[382px] border-2 rounded-md text-2xl text-[#034B63] font-sans flex flex-col items-center">
+              <img src={i_1} alt="Creative Director 1" className="w-full md:w-[251px] h-[301px]" />
+              <h1 className="tracking-wide font-bold pt-3 text-2xl">NAME</h1>
+              <h1 className="text-lg">ROLE</h1>
+            </div>
+            <div className="w-full md:w-[251px] h-[382px] border-2 rounded-md text-2xl text-[#034B63] font-sans flex flex-col items-center">
+              <img src={i_1} alt="Creative Director 1" className="w-full md:w-[251px] h-[301px]" />
+              <h1 className="tracking-wide font-bold pt-3 text-2xl">NAME</h1>
+              <h1 className="text-lg">ROLE</h1>
+            </div>
+            <div className="w-full md:w-[251px] h-[382px] border-2 rounded-md text-2xl text-[#034B63] font-sans flex flex-col items-center">
+              <img src={i_1} alt="Creative Director 1" className="w-full md:w-[251px] h-[301px]" />
+              <h1 className="tracking-wide font-bold pt-3 text-2xl">NAME</h1>
+              <h1 className="text-lg">ROLE</h1>
+            </div>
+            <div className="w-full md:w-[251px] h-[382px] border-2 rounded-md text-2xl text-[#034B63] font-sans flex flex-col items-center">
+              <img src={i_1} alt="Creative Director 1" className="w-full md:w-[251px] h-[301px]" />
+              <h1 className="tracking-wide font-bold pt-3 text-2xl">NAME</h1>
+              <h1 className="text-lg">ROLE</h1>
+            </div>
+          
+          </div>
+      </div>
+     </div>
     </section>
 
     {/* Footer Section */}
