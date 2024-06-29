@@ -1,5 +1,10 @@
 import React from 'react';
 import image0 from "../assets/heroimage1.png"; // Replace with your hero image path
+import vision from "../assets/vision.png"; // Replace with your vision image path
+import innovation from "../assets/project_Management.png"; // Replace with your innovation image path
+import connection from "../assets/connected_People.png"; // Replace with your connection image path
+import line_v from "../assets/line_ver.png"; // Replace with your line image path
+import line_h from "../assets/line_hor.png"; // Replace with your line image path
 
 const About = () => (
   <div>
@@ -9,38 +14,69 @@ const About = () => (
       <div className="absolute inset-0 bg-black opacity-30"></div>
       <div className="container mx-auto h-full flex flex-col justify-center top-1 px-4 relative z-10">
         <pre className="text-l font-bold text-yellow-500 word-spacing-lg">A b o u t   U s</pre>
-        <h1 className="text-[36px] md:text-[48px] lg:text-[72px] font-extrabold mb-4 text-white">Sparkle and Shine <br />Our Promise to You</h1>
+        <h1 className="text-[36px] md:text-[48px] lg:text-[72px] font-extrabold mb-4 text-white">
+          Sparkle and Shine <br /> Our Promise to You
+        </h1>
       </div>
     </section>
 
     {/* Vision Section */}
-    <section className="bg-white py-20 px-4">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-0">
-        <div className="container mx-auto h-full flex flex-col justify-center top-1 px-4 relative z-10">
-          <pre className="text-l font-bold text-yellow-500 word-spacing-lg">V I S I O N</pre>
-          <h1 className="text-[36px] md:text-[48px] lg:text-[72px] font-extrabold mb-4">Our Vision is to transform <br />spaces through exceptional <br /> cleaning and innovation.</h1>
+    <section className="bg-[#F1F1F1] py-2 px-4 h-auto md:h-[100vh]">
+      <div className="flex flex-col md:flex-row justify-around">
+        <div className="mx-4 my-auto h-full flex flex-col justify-center top-1 relative z-10 w-full md:w-[60%] mt-8">
+          <pre className="text-l font-bold text-yellow-500 word-spacing-lg mx-3">V I S I O N</pre>
+          <h1 className="text-[28px] sm:text-[36px] md:text-[48px] lg:text-[72px] font-extrabold mb-4 text-[#034B63]">
+            Our Vision is to transform <br /> spaces through exceptional <br /> cleaning and innovation.
+          </h1>
         </div>
-        <div className="grid grid-cols-1 gap-4 md:gap-8">
-          <div className="bg-white rounded-lg shadow-lg p-6">
-            <div className="flex items-center mb-4">
-              <img src={image0} alt="Vision Icon" className="w-[44px] md:w-[88px] h-[44px] md:h-[88px] mr-4" />
-              <h3 className="ml-4 text-lg md:text-xl font-semibold text-gray-800">Vision</h3>
+        <div className='pt-5 hidden md:block'>
+          <img src={line_v} alt="Vision Icon" className="w-[4px] md:w-[3px] h-[80px] md:h-[740px] rounded-md" />
+        </div>
+        <div className="flex flex-col gap-4 mt-5 p-8 w-full md:w-auto">
+          <div className="">
+            <div className="flex items-center mb-8 flex-row">
+              <div className='pb-16'>
+                <img src={vision} alt="Vision Icon" className="w-[88px] md:w-[88px] h-[88px] md:h-[88px]" />
+              </div>
+              <div className='flex flex-col'>
+                <h3 className="ml-4 text-lg md:text-3xl font-semibold text-[#034B63]">Vision</h3>
+                <p className="text-[#9197A3] ml-4 text-[16px] sm:text-[20px] md:text-[28px]">
+                  Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit. Sed <br /> faucibus, ante et consequat tincidunt.
+                </p>
+              </div>
             </div>
-            <p className="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus, ante et consequat tincidunt.</p>
           </div>
-          <div className="bg-white rounded-lg shadow-lg p-6">
-            <div className="flex items-center mb-4">
-              <img src={image0} alt="Innovation Icon" className="w-[44px] md:w-[88px] h-[44px] md:h-[88px] mr-4" />
-              <h3 className="ml-4 text-lg md:text-xl font-semibold text-gray-800">Innovation</h3>
-            </div>
-            <p className="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus, ante et consequat.</p>
+          <div className="hidden md:block">
+            <img src={line_h} alt="Horizontal Line" className="w-[4px] md:w-[553px] h-[80px] md:h-[3px] rounded-md" />
           </div>
-          <div className="bg-white rounded-lg shadow-lg p-6">
-            <div className="flex items-center mb-4">
-              <img src={image0} alt="Connection Icon" className="w-[44px] md:w-[88px] h-[44px] md:h-[88px] mr-4" />
-              <h3 className="ml-4 text-lg md:text-xl font-semibold text-gray-800">Connection</h3>
+          <div className=" pt-8">
+            <div className="flex items-center mb-8 flex-row">
+              <div className='pb-16'>
+                <img src={innovation} alt="innovation Icon" className="w-[88px] md:w-[88px] h-[88px] md:h-[88px]" />
+              </div>
+              <div className='flex flex-col'>
+                <h3 className="ml-4 text-lg md:text-3xl font-semibold text-[#034B63]">innovation</h3>
+                <p className="text-[#9197A3] ml-4 text-[16px] sm:text-[20px] md:text-[28px]">
+                  Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit. Sed <br /> faucibus, ante et consequat tincidunt.
+                </p>
+              </div>
             </div>
-            <p className="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus, ante et consequat tincidunt.</p>
+          </div>
+          <div className="hidden md:block">
+            <img src={line_h} alt="Horizontal Line" className="w-[4px] md:w-[553px] h-[80px] md:h-[3px] rounded-md" />
+          </div>
+          <div className="pt-8">
+            <div className="flex items-center mb-8 flex-row">
+              <div className='pb-16'>
+                <img src={connection} alt="connection Icon" className="w-[88px] md:w-[88px] h-[88px] md:h-[88px]" />
+              </div>
+              <div className='flex flex-col'>
+                <h3 className="ml-4 text-lg md:text-3xl font-semibold text-[#034B63]">connection</h3>
+                <p className="text-[#9197A3] ml-4 text-[16px] sm:text-[20px] md:text-[28px]">
+                  Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit. Sed <br /> faucibus, ante et consequat tincidunt.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -48,13 +84,15 @@ const About = () => (
 
     {/* Creative Directors Section */}
     <section className="bg-gray-100 py-20 px-4 flex flex-col md:flex-row gap-16">
-      <div className='w-full md:w-1/2 my-5 flex flex-col md:flex-row gap-4 md:gap-8 h-[584px]'>
-        <img src={image0} className='w-full md:w-[323px] h-auto md:h-[451px] mb-4 md:mb-0' />
-        <img src={image0} className='w-full md:w-[323px] h-auto md:h-[451px]' />
+      <div className='w-full md:w-1/2 my-5 flex flex-col md:flex-row gap-4 md:gap-8 h-auto'>
+        <img src={image0} className='w-full md:w-[323px] h-auto md:h-[451px] mb-4 md:mb-0' alt="Creative Director 1" />
+        <img src={image0} className='w-full md:w-[323px] h-auto md:h-[451px]' alt="Creative Director 2" />
       </div>
       <div className='w-full md:w-1/2 flex flex-col justify-center'>
         <h2 className='text-[28px] md:text-[36px] lg:text-[45px] font-bold'>Creative Directors</h2>
-        <p className='font-normal text-[16px] md:text-[20px] lg:text-[28px] text-[#9197A3]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus, ante et consequat tincidunt.</p>
+        <p className='font-normal text-[16px] md:text-[20px] lg:text-[28px] text-[#9197A3]'>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus, ante et consequat tincidunt.
+        </p>
       </div>
     </section>
 
