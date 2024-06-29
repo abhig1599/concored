@@ -31,8 +31,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`fixed top-0 left-0 w-full z-50 bg-gray-900 bg-opacity-40 backdrop-blur transition duration-500 ease-in-out ${isNavbarVisible ? 'opacity-100' : 'opacity-0'}`}>
-      <div className="flex justify-between items-center py-4 px-4">
+    <div className={`fixed top-0 left-0 w-full z-50 transition duration-500 ease-in-out ${isNavbarVisible ? 'opacity-100' : 'opacity-0'}`}>
+      <div className="flex justify-between items-center py-4 px-4 bg-gray-900 bg-opacity-40 backdrop-blur">
         <button className="text-white text-3xl lg:hidden" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <i className="fas fa-times"></i> : <i className="fas fa-bars"></i>}
         </button>
@@ -54,12 +54,15 @@ const Navbar = () => {
           </ul>
         </nav>
       </div>
-      <div className={`fixed top-0 left-0 h-full w-1/2 bg-gray-900 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out lg:hidden`}>
+      {isOpen && (
+        <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-md z-40"></div>
+      )}
+      <div className={`fixed top-0 left-0 h-full w-1/2 bg-gray-900 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out z-50 lg:hidden`}>
         <button className="absolute top-4 right-4 text-white text-3xl" onClick={() => setIsOpen(false)}>
           <i className="fas fa-times"></i>
         </button>
-        <div className="flex flex-col items-center mt-12 bg-gray-900 bg-opacity-40 backdrop-blur transition duration-500">
-          <img src={logo} alt='Logo' className="w-[200px] mb-8" />
+        <div className="flex flex-col items-center mt-12 px-4">
+          <img src={logo} alt='Logo' className="w-[200px] mb-8 px-4" />
           <ul className="flex flex-col space-y-4">
             <li>
               <Link to="/" className="text-white text-xl underline-on-hover active-underline" onClick={() => setIsOpen(false)}>Home</Link>
