@@ -1,4 +1,3 @@
-import React from 'react';
 import image0 from "../assets/heroimage1.png"; 
 import Quality from "../assets/quality.png";
 import logo from "../assets/logo.png";
@@ -116,7 +115,7 @@ const Home = () => (
       </section>
 
       <section>
-        
+
       </section>
     </div>
   </div>

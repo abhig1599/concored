@@ -2,7 +2,6 @@
 // import HalfPic from '@/components/HalfPic'
 // import TopStrip from '@/components/TopStrip'
 import Middle from '../components/services/Middle'
-import React from 'react'
 import image0 from "../assets/heroimage1.png"; 
 
 const page = () => {
