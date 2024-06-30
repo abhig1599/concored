@@ -100,7 +100,7 @@ const About = () => (
         {/* ------------- */}
         <div className=' gap-4 md:mt-28 md:z-10 md:flex md:flex-row' >
         <div className=' md:flex md:items-end md:flex-row md:mb-[35px]'>
-        <div className='text-3xl  text-[#034B63]' >
+        <div className='text-3xl  text-[#b6e6f6]' >
         <h1>Visoin</h1>
         </div>
         <div className='bg-black rounded-full mx-2  w-[60px] h-[2px] mb-[15px] -mr-12 z-40' ></div>

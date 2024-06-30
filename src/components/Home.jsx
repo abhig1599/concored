@@ -1,6 +1,9 @@
 import React from 'react';
 import image0 from "../assets/heroimage1.png"; 
 import Quality from "../assets/quality.png";
+import logo from "../assets/logo.png";
+import workerImg from "../assets/workerImg.png";
+import discover from "../assets/discoverHome.png";
 
 const Home = () => (
   <div className='bg-[#F1F1F1]'>
@@ -61,15 +64,59 @@ const Home = () => (
                 <p className='text-[28px] text-[#5B5B5B] font-sans -mt-4'>A cutting-edge cleaning service that offers a seamless and <br/>immersive experience, ensuring your home in the heart of the <br/>city is spotless and inviting.</p>
               </div>
             </div>
-            <div>
-              <div className='w-[692px] h-[446px] bg-white'>
-
+            <div className='flex flex-row gap-10'>
+              <div className='w-[692px] h-[446px] mt-4 grid grid-cols-2 grid-rows-2 gap-4 pb-4'>
+                  <div className='w-[323px] h-[198px] hover:rounded-md bg-white hover:bg-[#034B63]  flex flex-col hover:text-white' >
+                      <h1 className='text-[45px] font-bold  font-sans pt-4 pl-4'>17K+</h1>
+                      <p className='text-[#858585] font-sans  text-[28px] pl-4'>Satistied <br/> Customers</p>
+                  </div>
+                  <div className='w-[323px] h-[198px] hover:rounded-md bg-white hover:bg-[#034B63]  flex flex-col hover:text-white' >
+                      <h1 className='text-[45px] font-bold  font-sans pt-4 pl-4 hover:text-white'>25+</h1>
+                      <p className='text-[#858585] font-sans  text-[28px] pl-4'>Year of <br/>Experience</p>
+                  </div>
+                  <div className='w-[323px] h-[198px] hover:rounded-md bg-white hover:bg-[#034B63]  flex flex-col hover:text-white' >
+                      <h1 className='text-[45px] font-bold  font-sans pt-4 pl-4 hover:text-white'>150+</h1>
+                      <p className='text-[#858585] font-sans  text-[28px] pl-4'>Award <br/> Winning</p>
+                  </div>
+                  <div className='w-[323px] h-[198px] hover:rounded-md bg-white hover:bg-[#034B63]  flex flex-col hover:text-white' >
+                      <h1 className='text-[45px] font-bold  font-sans pt-4 pl-4 hover:text-white'>25+</h1>
+                      <p className='text-[#858585] font-sans  text-[28px] pl-4'>Property <br/> Collections</p>
+                  </div>
               </div>
-              <div>
-
+              <div className='w-[875px] h-[439px] bg-white rounded-2xl    flex flex-row '>
+                  <div className='flex flex-col justify-around'>
+                    <div className='font-sans'>
+                      <h1 className='tracking-[.50em] text-[#FEB100] pt-8 ml-12 '>Experience</h1>
+                      <p className='text-[20px] ml-12 text-[#9197A3]'>We hove witnessed the ever-<br/>evolving landscape of thereof <br/>estate market and become o<br/> trusted partner by thousands of<br/>
+                      clients.</p>
+                    </div>
+                    <img src={logo} alt="icon" className="w-[132px] h-[121px] ml-6"/>
+                  </div>
+                  <div>
+                    <img src={workerImg} alt="icon" className="w-[451px] h-[363px] ml-8 mt-9"/>
+                  </div>
               </div>
             </div>
         </div>
+      </section>
+
+      <section className='h-[1501px] w-full bg-[#034B63] text-white' >
+        <div className='flex flex-col gap-12'>
+          <div className='flex flex-row justify-items-start justify-between mx-28 mt-24 '>
+              <h1 className='text-[72px] font-bold font-sans '>Discover Your <br/>Perfectly Clean Space</h1>
+              <div className='flex flex-row justify-around items-start  pt-10 w-[824px]' >
+                <div className='w-[2px] h-[100px] bg-[#F29E1A] ' ></div>
+                <p className='text-[28px] font-sans -mt-4'>Embark on a journey to discover the pristine cleanliness of <br/> your space, with our exclusive cleaning services that fulfill<br/> your aspirations and inspire a spotless environment</p>
+              </div>
+          </div>
+          <div>
+            <img src={discover} alt="icon" className="w-[1650px] h-[1010px] ml-6 ml-28"/>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        
       </section>
     </div>
   </div>
