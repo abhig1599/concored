@@ -3,6 +3,11 @@ import Quality from "../assets/quality.png";
 import logo from "../assets/logo.png";
 import workerImg from "../assets/workerImg.png";
 import discover from "../assets/discoverHome.png";
+import testPassesd from "../assets/testPassed.png";
+import sparkles from "../assets/sparkles.png";
+import checked from "../assets/checked.png";
+import calendar from "../assets/calendar.png";
+import ok from "../assets/ok.png";
 
 const Home = () => (
   <div className='bg-[#F1F1F1]'>
@@ -92,7 +97,7 @@ const Home = () => (
                     <img src={logo} alt="icon" className="w-[132px] h-[121px] ml-6"/>
                   </div>
                   <div>
-                    <img src={workerImg} alt="icon" className="w-[451px] h-[363px] ml-8 mt-9"/>
+                    <img src={workerImg} alt="icon" className="md:w-[451px] md:h-[363px] md:ml-8 md:mt-9 hidden "/>
                   </div>
               </div>
             </div>
@@ -114,9 +119,99 @@ const Home = () => (
         </div>
       </section>
 
-      <section>
+      <section className="h-[851px] w-full ">
+        <div className="flex flex-col gap-24">
+          <div className='flex flex-row justify-items-start justify-between mx-28 mt-24 '>
+              <h1 className='text-[72px] font-bold font-sans '>Discover Your <br/>Perfectly Clean Space</h1>
+              <div className='flex flex-row justify-around items-start  pt-10 w-[824px]' >
+                <div className='w-[2px] h-[100px] bg-[#F29E1A] ' ></div>
+                <p className='text-[28px] font-sans -mt-4'>Embark on a journey to discover the pristine cleanliness of <br/> your space, with our exclusive cleaning services that fulfill<br/> your aspirations and inspire a spotless environment</p>
+              </div>
+          </div>
+          <div className="flex flex-row mx-28 mb-24 justify-around" >
+            <div className="flex flex-col items-center">
+              <img src={testPassesd} alt="icon" className="w-[100px] h-[100px]"/>
+              <h1 className="text-[#FEB100] tracking-[.40em] ">Step 1</h1>
+              <h1 className="my-2 text-[20px]  ">Select Your Service</h1>
+              <p className="text-[#838280] text-[15px] ">Choose from our wide range of cleaning</p><p className="text-[#838280] text-[15px] "> services to fit your needs.</p>
+            </div>
+            <div className="w-[120px] h-1 bg-black mt-14" ></div>
+            <div className="flex flex-col items-center">
+              <img src={calendar} alt="icon" className="w-[100px] h-[100px]"/>
+              <h1 className="text-[#FEB100] tracking-[.40em] ">Step 1</h1>
+              <h1 className="my-2 text-[20px]  ">Select Your Service</h1>
+              <p className="text-[#838280] text-[15px] ">Choose from our wide range of cleaning</p><p className="text-[#838280] text-[15px] "> services to fit your needs.</p>
+            </div>
+            <div className="w-[120px] h-1 bg-black mt-14" ></div>
 
+            <div className="flex flex-col items-center">
+              <img src={checked} alt="icon" className="w-[100px] h-[100px]"/>
+              <h1 className="text-[#FEB100] tracking-[.40em] ">Step 1</h1>
+              <h1 className="my-2 text-[20px]  ">Select Your Service</h1>
+              <p className="text-[#838280] text-[15px] ">Choose from our wide range of cleaning</p><p className="text-[#838280] text-[15px] "> services to fit your needs.</p>
+            </div>
+            <div className="w-[120px] h-1 bg-black mt-14" ></div>
+
+            <div className="flex flex-col items-center">
+              <img src={sparkles} alt="icon" className="w-[100px] h-[100px]"/>
+              <h1 className="text-[#FEB100] tracking-[.40em] ">Step 1</h1>
+              <h1 className="my-2 text-[20px]  ">Select Your Service</h1>
+              <p className="text-[#838280] text-[15px] ">Choose from our wide range of cleaning</p><p className="text-[#838280] text-[15px] "> services to fit your needs.</p>
+            </div>
+          </div>
+        </div>
       </section>
+
+      <section className=" h-[809px] w-full">
+        <div className="flex flex-col md:flex-row m-4 md:mx-28 gap-24" >
+          <div>
+            <img src={image0} alt="icon" className="w-[825px] h-[594px]"/>
+          </div>
+          <div className="flex flex-col">
+            <h1 className="text-[45px]">Our Manpower Services <br/>Guarantee:</h1>
+            <p className="py-4 text-[24px]" >Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut <br/>odit aut fugit, sed quia consequuntur magni dolores eos qui <br/>ratione voluptatem sequi nesciunt. Neque porro quisquam est, <br/>qui dolorem.</p>
+            <div className="flex flex-row">
+              <img src={ok} alt="ok" className="w-[32px] h-[32px] mt-2 mr-4" />
+              <h1 className="text-[28px]" >Trained and Certified Professionals</h1>
+            </div>
+            <div className="flex flex-row my-4">
+              <img src={ok} alt="ok" className="w-[32px] h-[32px] mt-2 mr-4" />
+              <h1 className="text-[28px]" >Reliable and Trustworthy Staff</h1>
+            </div>
+            <div className="flex flex-row ">
+              <img src={ok} alt="ok" className="w-[32px] h-[32px] mt-2 mr-4" />
+              <h1 className="text-[28px]" >Flexible Scheduling Options</h1>
+            </div>
+            <div className="flex flex-row my-4">
+              <img src={ok} alt="ok" className="w-[32px] h-[32px] mt-2 mr-4" />
+              <h1 className="text-[28px]" >Dedicated Support Team for Any Queries or Concerns</h1>
+            </div>
+            <div className="flex flex-row ">
+              <img src={ok} alt="ok" className="w-[32px] h-[32px] mt-2 mr-4" />
+              <h1 className="text-[28px]" >Prompt and Efficient Service</h1>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section className="h-[1113px] w-full bg-[#034B63]" >
+        <div className="flex flex-col">
+          <div>
+          <div className='flex flex-row justify-items-start justify-between mx-28 mt-24 '>
+              <h1 className='text-[72px] font-bold font-sans text-white'>What Our Customers <br/>Are Saying</h1>
+              <div className='flex flex-row justify-around items-start  pt-20 w-[824px]' >
+                <div className='w-[2px] h-[70px] bg-[#F29E1A] ' ></div>
+                <p className='text-[28px] font-sans -mt-2 text-white'>Always professional and can be counted on to get the job done. <br/>Builds long term relationships to be prosperous together.</p>
+              </div>
+          </div>
+          </div>
+          <div>
+
+          </div>
+        </div>
+      </section>
+
     </div>
   </div>
 );
