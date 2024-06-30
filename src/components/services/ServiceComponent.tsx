@@ -27,7 +27,7 @@ const ServiceComponent: React.FC<ServiceProps> = ({ service }) => {
        cursor-pointer hover:scale-110 hover:shadow-lg  
       "
         >
-          <MoveRight stroke="white" size={40} strokeWidth={1.3} />
+          <MoveRight stroke="white" size={40} strokeWidth={1.3}  />
         </div>
         <div className="text-gray-400 whitespace-pre flex items-center justify-center text-2xl">
           Read more
