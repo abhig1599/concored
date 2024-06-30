@@ -49,7 +49,7 @@ const Navbar = () => {
               <Link to="/services" className="text-white text-xl underline-on-hover active-underline">Services</Link>
             </li>
             <li>
-              <Link to="/contact" className="text-white bg-yellow-500 py-3 px-6 font-bold rounded-3xl md:py-5 md:px-12 text-base md:text-xl underline-on-hover active-underline">Contact Us</Link>
+              <Link to="/contact" className="text-white bg-yellow-500 py-2 px-5 font-bold rounded-3xl md:py-5 md:px-12 text-base md:text-xl underline-on-hover active-underline">Contact Us</Link>
             </li>
           </ul>
         </nav>
