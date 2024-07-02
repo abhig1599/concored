@@ -212,6 +212,12 @@ const Home = () => (
         </div>
       </section>
 
+      <section>
+        <div className="Rectangle24045 w-[1920px] h-[851px] bg-black/opacity-50 border border-white">
+          
+        </div>
+      </section>
+
     </div>
   </div>
 );
